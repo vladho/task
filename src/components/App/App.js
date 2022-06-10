@@ -1,10 +1,13 @@
 import Container from "../Container/Container";
+import Header from "../Header/Header";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Container></Container>
+      <Container>
+        <Header></Header>
+      </Container>
     </>
   );
 }
