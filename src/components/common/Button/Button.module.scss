@@ -2,11 +2,13 @@
 
 .btn {
     width: 100px;
-    height: 23px;
+    height: 34px;
     background-color: $primaryColor;
     border-radius: 80px;
     outline: none;
     border: none;
+
+    font-weight: 400;
 }
 
 .btn:hover {

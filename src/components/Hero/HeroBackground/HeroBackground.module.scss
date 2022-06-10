@@ -1,0 +1,24 @@
+@import "../../../styles/shared.scss";
+
+.background {
+        padding-top: 200px;
+            padding-bottom: 200px;
+            max-width: 100%;
+            min-height: 500px;
+            margin-right: auto;
+            margin-left: auto;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url(../../../assets/image.jpeg);
+        
+            @include for-size(tablet) {
+                min-height: 650px;
+            }
+        
+            @include for-size(desktop-up) {
+                max-width: 1170px;
+            }
+}

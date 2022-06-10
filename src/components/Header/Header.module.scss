@@ -5,7 +5,7 @@
 
 .group {
     display: flex;
-grid-column-gap: 10px;
+    justify-content: space-between;
     align-items: center;
 
     height: 60px;

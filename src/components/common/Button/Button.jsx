@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
-const button = ({ name }) => {
+const Button = ({ children }) => {
   return (
     <>
       <button className={styles.btn} type="button">
-        {name}
+        {children}
       </button>
     </>
   );
 };
 
-export default button;
+export default Button;

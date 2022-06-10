@@ -5,8 +5,8 @@ import styles from "./ButtonGroup.module.scss";
 const ButtonGroup = () => {
   return (
     <div className={styles.btnGroup}>
-      <Button name="Users"></Button>
-      <Button name="Sign Up"></Button>
+      <Button>Users</Button>
+      <Button>Sign Up</Button>
     </div>
   );
 };
