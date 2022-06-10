@@ -1,8 +1,14 @@
+@import "../../../styles/shared.scss";
+
 .btn {
     width: 100px;
     height: 23px;
+    background-color: $primaryColor;
+    border-radius: 80px;
+    outline: none;
+    border: none;
 }
 
-.btn:first-child {
-    margin-right: 10px;
+.btn:hover {
+    background-color: $primaryColor;
 }

@@ -3,9 +3,8 @@
     border-radius: 80px;
 }
 
-.wrapper {
+.group {
     display: flex;
-    justify-content: space-between;
+grid-column-gap: 10px;
     align-items: center;
-    outline: 1px solid;
 }

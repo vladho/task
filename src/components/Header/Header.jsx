@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import Logo from "./Logo/Logo";
-import Button from "./Button/Button";
+import ButtonGroup from "./ButtonGroup/ButtonGroup";
 
 const Header = () => {
   return (
-    <div className={styles.wrapper}>
+    <header className={styles.group}>
       <Logo />
-      <Button />
-    </div>
+      <ButtonGroup />
+    </header>
   );
 };
 

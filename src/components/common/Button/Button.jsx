@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
-const button = () => {
+const button = ({ name }) => {
   return (
-    <div className={styles.group}>
-      <button className={styles.btn}>Users</button>
-      <button className={styles.btn}>Sing up</button>
-    </div>
+    <>
+      <button className={styles.btn} type="button">
+        {name}
+      </button>
+    </>
   );
 };
 
