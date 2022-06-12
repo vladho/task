@@ -4,6 +4,7 @@ import HeaderWrapper from "../Header/HeaderWrapper/HeaderWrapper";
 import Hero from "../Hero/Hero";
 import HeroBackground from "../Hero/HeroBackground/HeroBackground";
 import OurUsers from "../OurUsers/OurUsers";
+import NewUser from "../NewUser/NewUser";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </HeroBackground>
       <Container>
         <OurUsers />
+      </Container>
+      <Container>
+        <NewUser />
       </Container>
     </>
   );
