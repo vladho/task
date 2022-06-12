@@ -1,0 +1,17 @@
+@import "../../../styles/shared.scss";
+
+.list {
+    display:grid;
+    margin-bottom: 50px;
+
+    @include for-size(tablet) {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+    }
+
+    @include for-size(desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 29px;
+    }
+}
+
