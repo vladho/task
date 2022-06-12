@@ -1,7 +1,11 @@
 import React from "react";
 
 const OurUsersList = () => {
-  return <></>;
+  return (
+    <>
+      <ul className={styles.list}>{}</ul>
+    </>
+  );
 };
 
 export default OurUsersList;
