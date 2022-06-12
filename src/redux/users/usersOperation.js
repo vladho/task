@@ -1,23 +1,23 @@
-import { api } from "../../services";
 import axios from "axios";
-import usersActions from "./usersActions";
 
-const { fetchUSersRequest, fetchUSersSuccess, fetchUSersError } = usersActions;
+import {
+  getUsersRequest,
+  getUsersSuccess,
+  getUsersError,
+} from "./usersActions";
 
-const fetchUsers = () => async (dispatch) => {
-  dispatch(fetchUSersRequest());
+axios.defaults.baseURL =
+  "https://frontend-test-assignment-api.abz.agency/api/v1";
+
+export const getUsers = () => async (dispatch) => {
+  dispatch(getUsersRequest());
 
   try {
-    const data = await api.getAllUsers();
-    dispatch(fetchUSersSuccess(data));
-    console.log(data);
+    // console.log("try");
+    const data = await axios.get("/users");
+    // console.log(data.data.users);
+    dispatch(getUsersSuccess(data.data.users));
   } catch (error) {
-    dispatch(fetchUsersError());
+    dispatch(getUsersError());
   }
 };
-
-const usersOperatios = {
-  fetchUsers,
-};
-
-export default usersOperatios;
